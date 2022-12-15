@@ -1,0 +1,38 @@
+{
+    "name": "laravel-tool/kladr",
+    "description": "Laravel KLADR import",
+    "type": "laravel-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Potemkin",
+            "email": "ysoft2000@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "ext-soap": "*",
+        "hisamu/php-xbase": "^2.0",
+        "illuminate/database": "^9.0",
+        "laravel/framework": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelTool\\Kladr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelTool\\Kladr\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelTool\\Kladr\\ServiceProvider"
+            ]
+        }
+    }
+}
